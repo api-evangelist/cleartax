@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cleartax.in/cleartax-docs/clear-finance-cloud/learn-clear-finance-cloud-basics/access-token
+docs:
+- https://docs.cleartax.in/cleartax-docs/clear-finance-cloud/learn-clear-finance-cloud-basics/access-token
+- https://docs.cleartax.in/cleartax-docs/clear-finance-cloud/cfc-api-reference/generate-access-token-api
+- https://docs.cleartax.in/cleartax-docs/e-invoicing-api/learn-e-invoicing-api-basics/how-to-get-e-invoicing-user-auth-token
+summary:
+  types:
+  - apiKey
+  model: >-
+    Client-secret exchanged for a bearer access token. The API client secret is generated
+    in the Clear UI and passed to the token endpoint to mint a short-lived access token,
+    which is then sent on every product API request. Access tokens can be regenerated and
+    revoked; generating a new token invalidates the previous one.
+schemes:
+- name: clientSecret
+  type: apiKey
+  in: header
+  parameter: x-clear-client-secret
+  description: >-
+    API client secret generated from the Clear UI, sent to the Generate Access Token API
+    (GET /integration/v1/authz/token) to obtain an access token. Must not be empty.
+- name: accessToken
+  type: apiKey
+  in: header
+  parameter: x-cleartax-auth-token
+  description: >-
+    Access token obtained from the token endpoint, sent in the request header of any
+    product API (CFC, GST, Max ITC, E-Invoicing, Invoicing).
+token_endpoint:
+  method: GET
+  path: /integration/v1/authz/token
+  sandbox_url: https://api-sandbox.clear.in/integration/v1/authz/token
+  production_url: https://api.clear.in/integration/v1/authz/token
+notes: >-
+  The E-Invoicing/E-Waybill product additionally uses a per-GSTIN user auth token layered
+  on the Clear access token; base URL varies by region (India vs KSA) and environment
+  (sandbox vs production).
