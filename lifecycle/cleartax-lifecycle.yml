@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cleartax.in/cleartax-docs
+versioning:
+  scheme: uri-path
+  current: v1
+  example: /integration/v1/authz/token
+  docs: https://docs.cleartax.in/cleartax-docs
+deprecation:
+  policy_url: null
+  notes: >-
+    No formal deprecation-policy page was found, but several operations are explicitly
+    marked "(Deprecated)" in the API reference, indicating an active deprecation practice.
+deprecated_operations:
+- api: Clear Finance Cloud (CFC) API
+  operation: Ingest Documents via JSON
+  url: https://docs.cleartax.in/cleartax-docs/clear-finance-cloud/cfc-api-reference/ingestion-api/deprecated-ingest-documents-via-json
+- api: GLS API
+  operation: Advanced Ingestion API Reference (Deprecated)
+  url: https://docs.cleartax.in/cleartax-docs/gls-api/gls-api-reference/advanced-ingestion-api-reference-deprecated
+- api: Clear Max ITC API
+  operation: Ingest PR via JSON
+  url: https://docs.cleartax.in/cleartax-docs/max-itc-api/max-itc-api-reference/max-itc-apis/upload-purchase-documents/deprecated-ingest-pr-via-json
+status_page: null
+sla:
+  url: null

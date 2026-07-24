@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/ on cleartax.in, clear.in, api.clear.in
+hosts:
+- host: https://cleartax.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: cleartax-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://www.clear.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://api.clear.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404

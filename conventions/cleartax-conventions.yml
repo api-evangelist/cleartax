@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cleartax.in/cleartax-docs
+docs:
+- https://docs.cleartax.in/cleartax-docs/clear-finance-cloud/learn-clear-finance-cloud-basics
+- https://docs.cleartax.in/cleartax-docs/e-invoicing-api/learn-e-invoicing-api-basics
+authentication:
+  style: token-header
+  client_secret_header: x-clear-client-secret
+  access_token_header: x-cleartax-auth-token
+  detail: authentication/cleartax-authentication.yml
+versioning:
+  scheme: uri-path
+  example: /integration/v1/authz/token
+  detail: lifecycle/cleartax-lifecycle.yml
+idempotency:
+  supported: unknown
+  notes: >-
+    No documented idempotency-key header was found in the public docs; not asserted.
+ingestion_pattern:
+  style: async-file-upload
+  steps:
+  - Request a pre-signed upload URL
+  - Upload the file to storage (S3 pre-signed URL)
+  - Trigger ingestion / create ingestion activity
+  - Poll ingestion status until complete
+  notes: >-
+    CFC, GLS, and Max ITC ingestion APIs follow a pre-signed-URL upload then async
+    status-polling pattern rather than synchronous request/response.
+errors:
+  detail: errors/cleartax-error-codes.yml
+  format: product-specific error-code registries (Max ITC error-code master, E-Invoicing
+    error codes)
+region_environments:
+  notes: >-
+    Base URL varies by region (India vs KSA / Saudi Arabia) and environment (sandbox vs
+    production); see sandbox/cleartax-sandbox.yml.

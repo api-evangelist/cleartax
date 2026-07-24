@@ -1,0 +1,15 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cleartax.in/cleartax-docs
+summary: >-
+  Clear publishes product-specific error-code registries in its API reference. Individual
+  codes are documented on the pages below (not enumerated here to avoid transcription
+  error); each product returns a structured error response with a code and message.
+registries:
+- api: Clear Max ITC API
+  name: Error Code Master
+  url: https://docs.cleartax.in/cleartax-docs/max-itc-api/max-itc-api-reference/resources-and-masters/error-code-master
+- api: Clear E-Invoicing & E-Waybill API
+  name: Error Codes
+  url: https://docs.cleartax.in/cleartax-docs/e-invoicing-api/e-invoicing-api-reference/resources-and-master/error-codes
+format: provider-specific (code + message envelope); not RFC 9457 problem+json

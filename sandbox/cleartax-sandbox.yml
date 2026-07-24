@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cleartax.in/cleartax-docs/clear-finance-cloud/cfc-api-reference/generate-access-token-api
+summary: >-
+  Clear provides a dedicated sandbox environment separated from production by host. The
+  sandbox base host for India is api-sandbox.clear.in; production is api.clear.in. Base URL
+  also varies by region (India vs KSA). Sandbox access requires an API client secret
+  generated from the Clear UI.
+environments:
+- name: sandbox
+  region: India
+  base_url: https://api-sandbox.clear.in
+  token_url: https://api-sandbox.clear.in/integration/v1/authz/token
+- name: production
+  region: India
+  base_url: https://api.clear.in
+  token_url: https://api.clear.in/integration/v1/authz/token
+credentials:
+  how_to_get: >-
+    Generate an API client secret from the Clear UI, then exchange it at the Generate
+    Access Token API for an access token.
+  header_secret: x-clear-client-secret
+  header_token: x-cleartax-auth-token
+notes: >-
+  No published static test cards or magic test identifiers were found (this is a tax/GST
+  compliance API, not a card-payments API); sandbox testing uses real client credentials
+  against non-production government-integration environments.
