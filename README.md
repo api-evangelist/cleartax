@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cleartax is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Cleartax (operating as Clear, clear.in) is an Indian fintech and financial-compliance automation platform that provides tax, GST, and e-invoicing software for individuals, tax professionals, and over 4,000 enterprises. Clear exposes a suite of developer APIs through its documentation portal at docs.cleartax.in, including the Clear Finance Cloud (CFC) ingestion APIs, the GST 2.0 / GSP filing API, the Max ITC input-tax-credit reconciliation API, the GLS API, the E-Invoicing and E-Waybill APIs (with government IRP/NIC-compatible endpoints and DSC signing), the Invoicing API, and KSA (Saudi Arabia) e-invoicing APIs. APIs authenticate with a client secret exchanged for an access token and run against production (api.clear.in) and sandbox (api-sandbox.clear.in) hosts.
 
-Backed by: y-combinator
+**Areas:** Company · Tax · GST · E-Invoicing · Compliance · Fintech · Accounting · India · Financial Automation · Government
+
+## Cleartax on APIs.io
+
+Everything profiled for Cleartax is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cleartax/](https://apis.io/providers/cleartax/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Clear E-Invoicing & E-Waybill API](https://apis.io/apis/cleartax/clear-e-invoicing-e-waybill-api/) — Generate, cancel, and retrieve GST e-invoices (IRN) and e-waybills, including government IRP/NIC-compatible endpoints, DSC PDF signing, and bulk operations.
+- [Clear GST 2.0 API](https://apis.io/apis/cleartax/clear-gst-20-api/) — ASP/GSP GST filing API for uploading documents and filing G1-G9 returns via Clear's GST Suvidha Provider integration.
+- [Clear Finance Cloud (CFC) API](https://apis.io/apis/cleartax/clear-finance-cloud-cfc-api/) — Document ingestion APIs for sale and purchase documents via file upload (pre-signed URL) with access-token authentication and ingestion-status tracking.
+- [Clear Max ITC API](https://apis.io/apis/cleartax/clear-max-itc-api/) — Input Tax Credit (ITC) reconciliation API: upload purchase documents, trigger the Max ITC workflow, and fetch reconciliation results.
+- [Clear Invoicing API](https://apis.io/apis/cleartax/clear-invoicing-api/) — Create sale and non-sale documents, download document PDFs, and retrieve document details for invoicing workflows.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cleartax Authentication](https://apis.io/security/cleartax/cleartax-authentication/)
+- [Cleartax Domain Security](https://apis.io/security/cleartax/cleartax-domain-security/)
+- [Cleartax Vulnerability Disclosure](https://apis.io/security/cleartax/cleartax-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cleartax.in)
+- [Documentation](https://docs.cleartax.in/cleartax-docs)
+- [Getting started](https://docs.cleartax.in/cleartax-docs/max-itc-api/getting-started-with-max-itc-api)
+- [API reference](https://docs.cleartax.in/cleartax-docs/e-invoicing-api/e-invoicing-api-reference)
+- [Pricing](https://www.clear.in/s/pricing)
+- [Sign up](https://app.clear.in)
+- [Support](https://www.clear.in/s/contact-us)
+- [Terms of service](https://www.clear.in/meta/terms)
+- [Privacy policy](https://www.clear.in/meta/privacy)
+- [GitHub](https://github.com/ClearTax)
+
+## API Evangelist rating
+
+**Kin Score 33.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 66.7 |
+| Access clarity | 44.7 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cleartax/](https://apis.io/providers/cleartax/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cleartax: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cleartax/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
